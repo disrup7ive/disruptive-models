@@ -1,0 +1,78 @@
+.large-hero {
+  border-bottom: 10px solid $mainGreen;
+  position: relative;
+
+  &__image {
+    display: block;
+  }
+
+  &__text-content {
+    padding-top: 88px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    text-align: center;
+
+    @mixin atMedium {
+      padding-top: 5%;
+    }
+  }
+
+  &__title {
+    font-weight: 380;
+    color: #FFF;
+    margin: 0;
+    font-size: 1.8rem;
+
+    @mixin atSmall {
+      font-size: 2.4rem;
+    }
+
+    @mixin atMedium {
+      font-size: 3.4rem;
+    }
+
+    @mixin atLarge {
+      font-size: 3.8rem;
+    }
+
+  }
+
+  &__subtitle {
+    font-weight: 340;
+    color: $mainGreen;
+    font-size: 1rem;
+    text-shadow: 2px, 2px, 0 rgba(0, 0, 0, .8);
+    margin: 0;
+
+    @mixin atSmall {
+      font-size: 1.2rem;
+    }
+
+    @mixin atMedium {
+      font-size: 1.8rem;
+    }
+
+    @mixin atLarge {
+      font-size: 2rem;
+    }
+
+  }
+
+    &__description {
+      color: $mainGreen;
+      font-size: 1.1rem;
+      font-weight: 300;
+      text-shadow: 2px, 2px, 0 rgba(0, 0, 0, .4);
+      max-width: 320px;
+      margin-left: auto;
+      margin-right: auto;
+
+    @mixin atSmall {
+      font-size: 1.475rem;
+    }
+    }
+
+}
